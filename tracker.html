@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Tracker - FitHub</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header with navigation -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>FitHub</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exercise.html">Exercise</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="tracker.html" class="active">Tracker</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <!-- Tracker page header -->
+      <section class="page-header">
+        <div class="container">
+          <h2>Fitness Tracker</h2>
+          <p>Monitor your progress and celebrate achievements</p>
+        </div>
+      </section>
+
+      <!-- Tracker dashboard -->
+      <section class="tracker-section">
+        <div class="container">
+          <div class="tracker-dashboard">
+            <!-- Summary cards -->
+            <div class="summary-cards">
+              <div class="summary-card">
+                <div class="card-icon">
+                  <i class="fas fa-fire"></i>
+                </div>
+                <div class="card-content">
+                  <h3>Weekly Calories</h3>
+                  <p class="card-value">4,250</p>
+                  <p class="card-change positive">+12% from last week</p>
+                </div>
+              </div>
+              <div class="summary-card">
+                <div class="card-icon">
+                  <i class="fas fa-dumbbell"></i>
+                </div>
+                <div class="card-content">
+                  <h3>Workouts</h3>
+                  <p class="card-value">15</p>
+                  <p class="card-change positive">+3 from last month</p>
+                </div>
+              </div>
+              <div class="summary-card">
+                <div class="card-icon">
+                  <i class="fas fa-weight"></i>
+                </div>
+                <div class="card-content">
+                  <h3>Current Weight</h3>
+                  <p class="card-value">75 kg</p>
+                  <p class="card-change negative">-2 kg from start</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Weight progress chart - New Vertical Bar Chart -->
+            <div class="chart-container">
+              <h3>Weight Progress</h3>
+              <div class="weight-chart-container">
+                <!-- Y-axis labels -->
+                <div class="weight-y-axis">
+                  <div class="weight-y-label">80kg</div>
+                  <div class="weight-y-label">78kg</div>
+                  <div class="weight-y-label">76kg</div>
+                  <div class="weight-y-label">74kg</div>
+                  <div class="weight-y-label">72kg</div>
+                </div>
+
+                <!-- Chart grid and bars -->
+                <div class="weight-chart-grid">
+                  <!-- Grid lines -->
+                  <div class="weight-grid-line"></div>
+                  <div class="weight-grid-line"></div>
+                  <div class="weight-grid-line"></div>
+                  <div class="weight-grid-line"></div>
+                  <div class="weight-grid-line"></div>
+
+                  <!-- Bar chart -->
+                  <div class="weight-bars">
+                    <!-- January - 79kg -->
+                    <div class="weight-bar-column">
+                      <div class="weight-bar-value">79kg</div>
+                      <div class="weight-bar" style="height: 80%">
+                        <div class="weight-bar-fill"></div>
+                      </div>
+                      <div class="weight-bar-label">Jan</div>
+                    </div>
+
+                    <!-- February - 78kg -->
+                    <div class="weight-bar-column">
+                      <div class="weight-bar-value">78kg</div>
+                      <div class="weight-bar" style="height: 70%">
+                        <div class="weight-bar-fill"></div>
+                      </div>
+                      <div class="weight-bar-label">Feb</div>
+                    </div>
+
+                    <!-- March - 77kg -->
+                    <div class="weight-bar-column">
+                      <div class="weight-bar-value">77kg</div>
+                      <div class="weight-bar" style="height: 60%">
+                        <div class="weight-bar-fill"></div>
+                      </div>
+                      <div class="weight-bar-label">Mar</div>
+                    </div>
+
+                    <!-- April - 76kg -->
+                    <div class="weight-bar-column">
+                      <div class="weight-bar-value">76kg</div>
+                      <div class="weight-bar" style="height: 50%">
+                        <div class="weight-bar-fill"></div>
+                      </div>
+                      <div class="weight-bar-label">Apr</div>
+                    </div>
+
+                    <!-- May - 75kg -->
+                    <div class="weight-bar-column">
+                      <div class="weight-bar-value">75kg</div>
+                      <div class="weight-bar" style="height: 40%">
+                        <div class="weight-bar-fill"></div>
+                      </div>
+                      <div class="weight-bar-label">May</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Calories burned chart -->
+            <div class="chart-container">
+              <h3>Weekly Calories Burned</h3>
+              <div class="calories-chart">
+                <!-- CSS-only chart using divs -->
+                <div class="chart-bars horizontal">
+                  <div class="chart-bar-h">
+                    <span class="bar-label">Mon</span>
+                    <div class="bar-fill" style="width: 65%"></div>
+                    <span class="bar-value">650 cal</span>
+                  </div>
+                  <div class="chart-bar-h">
+                    <span class="bar-label">Tue</span>
+                    <div class="bar-fill" style="width: 45%"></div>
+                    <span class="bar-value">450 cal</span>
+                  </div>
+                  <div class="chart-bar-h">
+                    <span class="bar-label">Wed</span>
+                    <div class="bar-fill" style="width: 80%"></div>
+                    <span class="bar-value">800 cal</span>
+                  </div>
+                  <div class="chart-bar-h">
+                    <span class="bar-label">Thu</span>
+                    <div class="bar-fill" style="width: 70%"></div>
+                    <span class="bar-value">700 cal</span>
+                  </div>
+                  <div class="chart-bar-h">
+                    <span class="bar-label">Fri</span>
+                    <div class="bar-fill" style="width: 85%"></div>
+                    <span class="bar-value">850 cal</span>
+                  </div>
+                  <div class="chart-bar-h">
+                    <span class="bar-label">Sat</span>
+                    <div class="bar-fill" style="width: 50%"></div>
+                    <span class="bar-value">500 cal</span>
+                  </div>
+                  <div class="chart-bar-h">
+                    <span class="bar-label">Sun</span>
+                    <div class="bar-fill" style="width: 30%"></div>
+                    <span class="bar-value">300 cal</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Workout count progress -->
+            <div class="progress-container">
+              <h3>Workout Completion</h3>
+              <p>Monthly goal: 20 workouts</p>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%"></div>
+                <span class="progress-text">15/20 workouts</span>
+              </div>
+            </div>
+
+            <!-- Recent activities -->
+            <div class="recent-activities">
+              <h3>Recent Activities</h3>
+              <div class="activity-list">
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-running"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Morning Run</h4>
+                    <p>5km in 28 minutes</p>
+                    <span class="activity-date">Today, 7:30 AM</span>
+                  </div>
+                  <div class="activity-stats">
+                    <span>350 cal</span>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-dumbbell"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Chest Workout</h4>
+                    <p>Bench press, push-ups, flyes</p>
+                    <span class="activity-date">Yesterday, 6:00 PM</span>
+                  </div>
+                  <div class="activity-stats">
+                    <span>450 cal</span>
+                  </div>
+                </div>
+                <div class="activity-item">
+                  <div class="activity-icon">
+                    <i class="fas fa-biking"></i>
+                  </div>
+                  <div class="activity-details">
+                    <h4>Cycling</h4>
+                    <p>15km in 45 minutes</p>
+                    <span class="activity-date">2 days ago, 5:30 PM</span>
+                  </div>
+                  <div class="activity-stats">
+                    <span>400 cal</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>FitHub</h2>
+            <p>Your fitness journey starts here</p>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="exercise.html">Exercise</a></li>
+              <li><a href="nutrition.html">Nutrition</a></li>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="tracker.html">Tracker</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-envelope"></i> info@fithub.com</p>
+            <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 FitHub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
